@@ -1,8 +1,10 @@
 #update container state
+RUN apt-get install ffmpeg
+
+RUN apt-get update
 
 RUN apt-get install ffmpeg
-RUN apt-get update
-RUN apt-get install ffmpeg
+
 RUN pip install --upgrade youtube-dl
 
 #This should be added to ENTRYPOINT, at least a variation of it :/
